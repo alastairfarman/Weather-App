@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Rubik+Mono+One&display=swap');
+body{
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+#name{
+    text-align: center;
+    font-size: 8vw;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+
+
+#temp{
+    --temp: clamp(0px,50vw,600px);
+    display: flex;
+    justify-content: center;
+    height: auto;
+    font-size: var(--temp);
+    color: rgba(255,255,255,0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik Mono One', sans-serif;
+    letter-spacing: calc(var(--temp) * -0.33);
+}
+
+.subtext{
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255,255,255,0.3);
+    margin: 5rem;
+    border-radius: 20px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.search-bar{
+    height: 33.5px;
+    box-sizing: border-box;
+}
