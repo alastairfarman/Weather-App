@@ -143,6 +143,7 @@ function clearOverlay(time) {
   if (time === "day") {
     backgroundGraphic.setAttribute("id", "sun");
     backgroundGraphic.src = "./lensflare.png";
+    backgroundGraphicTwo.src = "";
   } else {
     backgroundGraphic.setAttribute("id", "night");
     backgroundGraphic.src = "";
