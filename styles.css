@@ -59,9 +59,12 @@ body{
 #sun{
     position:fixed;
     top: 0;
-    transform: translate(-10rem,-10rem);
+    right: 0;
+    transform: translate(10rem,-5rem);
     z-index: -1000;
     width: 133vw;
+    max-height: 100vh;
+    max-width: calc(100vh);
     height:auto;
     mix-blend-mode: overlay;
 }
