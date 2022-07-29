@@ -4,7 +4,8 @@
   "description": "",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/alastairfarman/Weather-App#readme",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "rainyday.js": "^0.1.7"
   },
   "devDependencies": {
