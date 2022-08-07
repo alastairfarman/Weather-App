@@ -49,6 +49,50 @@ body{
     transform: translate(0, 30px) scaleX(-1) scale(0.9);
 }
 
+#star, #star2{
+    position:fixed;
+    top: 2%;
+    left: 15%;
+    z-index: -1000;
+    animation: star 7s infinite;
+    opacity: 30%;
+    filter: drop-shadow( 0px 0px 10px rgb(255, 255, 255));
+
+}
+
+#star2{
+    transform: translate(50vw, 20vh) scale(0.8);
+    animation-delay: 3s;
+}
+
+@keyframes star {
+    0% {
+        opacity: 40%;
+    }
+
+    20% {
+        opacity: 70%;
+    }
+    
+    40% {
+        opacity: 40%;
+    }
+
+    50%{
+        opacity: 75%;
+    }
+
+    75%{
+        opacity: 35%;
+    }
+    85%{
+        opacity: 55%;
+    }
+    100%{
+        opacity: 40%;
+    }
+}
+
 @keyframes cloud {
     0% {
         left: 50%;

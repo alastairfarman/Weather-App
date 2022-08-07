@@ -87,6 +87,7 @@ function cloudsStyle(secondaryWeather, time) {
     secondaryWeather === "scattered clouds"
   ) {
     clearGradient(time);
+    clearOverlay(time);
     cloudOverlay();
   } else {
     overcastGradient(time);
@@ -140,14 +141,16 @@ function snowGradient(time) {
   document.body.style.backgroundColor = "#F9F7F3";
 }
 function clearOverlay(time) {
+  console.log(time);
   if (time === "day") {
     backgroundGraphic.setAttribute("id", "sun");
     backgroundGraphic.src = "./lensflare.png";
     backgroundGraphicTwo.src = "";
   } else {
-    backgroundGraphic.setAttribute("id", "night");
-    backgroundGraphic.src = "";
-    backgroundGraphicTwo.src = "";
+    backgroundGraphic.setAttribute("id", "star");
+    backgroundGraphic.src = "./astroid.svg";
+    backgroundGraphicTwo.setAttribute("id", "star2");
+    backgroundGraphicTwo.src = "./astroid.svg";
   }
 }
 function cloudOverlay() {
@@ -182,4 +185,4 @@ searchBar.addEventListener("keyup", function (e) {
 
 //init
 
-getWeather("las vegas");
+getWeather("los angeles");
